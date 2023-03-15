@@ -1,0 +1,7 @@
+h1{color: green;}
+h2{color: #00f;}
+p{
+    font-family: "바탕체";
+    font-size: 16px;
+    /* font-size: 1em; */
+}
