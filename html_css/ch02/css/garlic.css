@@ -5,3 +5,7 @@ p{
     font-size: 16px;
     /* font-size: 1em; */
 }
+span{
+    color: red;
+    font-weight: bold;
+}
