@@ -1,0 +1,18 @@
+#content{width: 800px; margin:30px auto;}
+form{width: 400px; margin: 0 auto;}
+legend{
+    font-size: 15px;
+    font-weight: bold;
+}
+ul{list-style: none;  padding: 0}
+ul li{margin: 20px;}
+/* 레이블의 크기 100px 왼쪽으로 배치 */
+.reg{
+    width: 100px;
+    float: left;
+    text-align: right;
+    margin-right: 10px;
+}
+input{width: 200px; height: 25px;}
+#major{width: 210px; height: 30px;}
+button{margin: 10px; height: 30px;}

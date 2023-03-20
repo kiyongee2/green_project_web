@@ -1,0 +1,18 @@
+#container{
+    width: 1000px;
+    margin: 20px auto;
+    border: 1px solid #222;
+    padding: 10px 20px;
+  }
+  table, th, td {
+    border:1px solid #ccc;
+    border-collapse: collapse;
+    caption-side:top;
+    text-align: center;
+  }
+  th, td { 
+    padding:10px 20px; 
+  }
+  caption{
+    margin-bottom: 10px;
+  }

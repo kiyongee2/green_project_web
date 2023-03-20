@@ -1,0 +1,19 @@
+/* header 스타일*/
+*{margin: 0; padding: 0;}
+#container{width: 1000px; margin: 0 auto;}
+header{height: 80px; background: #006699;}
+header #logo{width: 300px; float: left;  padding-left: 25px; line-height: 80px;}
+header h1{color: #fff; margin:0}
+header h1:hover{color: #2fb2fd}
+nav{width: 650px; height: 100%; float:right; line-height: 80px;}
+nav ul{list-style: none; }
+nav ul li{float: left;}
+nav ul li a{display: block; padding: 0 30px;}
+a:link, a:visited{
+    text-decoration: none;
+    color: #fff;
+}
+a:hover{background-color: #2fb2fd; color: #fff}
+
+/* section 스타일 */
+section{padding: 20px;}
