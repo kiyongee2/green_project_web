@@ -1,0 +1,17 @@
+#container{
+    width: 520px;
+    margin: 10px auto;
+    border: 1px solid #222;
+    padding: 20px;
+  }
+  ul li{
+    list-style: none;
+    margin: 10px;
+  }
+  .reg{
+    width: 70px;
+    float: left;
+    text-align: right;
+    margin-right: 10px;
+  }
+  .button{margin-top: 10px;}

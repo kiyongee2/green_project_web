@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/front.css">
+</head>
+<body>
+    <div id="container">
+        <h1>프런트엔드 개발자 지원서</h1>
+        <p>HTML, CSS, 자바스크립트의 기술을 이해하고 실무 경험이 있는 분을 찾습니다.</p>
+        <hr>
+        <form action="" method="post">
+            <h4>개인 정보</h4>
+            <ul>
+              <li>
+                <label for="name" class="reg">이름</label>
+                <input type="text" id="name" placeholder="공백 없이 입력하세요">
+              </li>
+              <li>
+                <label for="phone" class="reg">연락처</label>
+                <input type="tel" id="phone">
+              </li>
+            </ul>
+            <h4>지원 분야</h4>
+            <ul>
+              <li>
+                <label><input type="radio" name="field" value="webpub">웹 퍼블리싱</label>
+              </li>
+              <li>
+                <label><input type="radio" name="field" value="webapp">웹 애플리케이션 개발</label>
+              </li>
+              <li>
+                <label><input type="radio" name="field" value="env">개발 환경 개선</label>
+              </li>
+            </ul>
+            <h4>지원 동기</h4>
+            <textarea name="memo" cols="60" rows="5" 
+                      placeholder="본사 지원 동기를 간략히 써 주세요"></textarea>
+            <div class="button">
+              <input type="submit" value="접수하기">
+              <input type="reset" value="다시쓰기">
+            </div>
+          </form>
+        </div>
+</body>
+</html>

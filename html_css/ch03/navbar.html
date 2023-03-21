@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>목록 메뉴</title>
+    <style>
+        nav{width: 300px;}
+        ul{list-style: none;}
+        /* li 태그는 블록 요소임. display: block은 생략 가능 */
+        ul li{
+            border: 1px solid #222;
+            padding: 20px 40px;
+            /* display: inline-block; nav 크기 늘려야 함*/
+            cursor: pointer;
+        }
+        a{text-decoration: none;color: #000;}
+        li:hover{background: #eee;}
+    </style>
+</head>
+<body>
+    <h1>ABC 주식회사</h1>
+    <nav>
+        <ul>
+            <li><a href="#">회사 소개</a></li>
+            <li><a href="#">도서</a></li>
+            <li><a href="#">자료실</a></li>
+            <li><a href="#">동영상 강의</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

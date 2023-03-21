@@ -1,0 +1,18 @@
+#container{width: 640px; margin: 0 auto;}
+#check{border: 1px solid #ccc;}
+h1{
+  background: black;
+  color: white;
+  font-size: 1em;  /*크기가 16px*/
+  margin: 0;
+  padding: 10px;
+}
+h2{color: #ff0000; text-align: center;}
+p{
+  text-align: center;
+  line-height: 2;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.accent{color: blue;}
+.smalltext{font-size: 0.7em;}
