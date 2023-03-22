@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* index 숫자가 클수록 위로 올라옴 */
+        div{
+            width: 100px;
+            height: 100px;
+            font-size: 2em;
+            position: absolute;
+        }
+        .box1{
+            background: #ff0000;
+            top: 50px;
+            left: 50px;
+            z-index: 3;
+        }
+        .box2{
+            background: #00ff00;
+            top: 70px;
+            left: 110px;
+            z-index: 1;
+        }
+        .box3{
+            background: #0000ff;
+            top: 110px;
+            left: 80px;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+</body>
+</html>

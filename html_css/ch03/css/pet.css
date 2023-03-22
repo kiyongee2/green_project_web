@@ -1,13 +1,14 @@
-/* header 스타일*/
 *{margin: 0; padding: 0;}
 #container{width: 1000px; margin: 0 auto;}
+
+/* header 스타일*/
 header{height: 80px; background: #006699;}
-header #logo{width: 300px; float: left;  padding-left: 25px; line-height: 80px;}
+header #logo{width: 200px; float: left;  padding-left: 25px; line-height: 80px;}
 header h1{color: #fff; margin:0}
 header h1:hover{color: #2fb2fd}
-nav{width: 650px; height: 100%; float:right; line-height: 80px;}
-nav ul{list-style: none; }
-nav ul li{float: left;}
+nav{width: 750px; height: 100%; float:right;}
+nav ul{list-style: none; line-height: 80px; margin-right: 50px;}
+nav ul li{float: right;}
 nav ul li a{display: block; padding: 0 30px;}
 a:link, a:visited{
     text-decoration: none;

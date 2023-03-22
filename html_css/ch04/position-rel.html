@@ -6,36 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        #rec1{
-            width: 300px;
-            height: 300px;
-            border: 1px solid #ccc;
-            margin: 50px;
+        .box1{
+            width: 100px;
+            background: #ff0;
+            padding: 20px;
+            margin-right: 10px;
+            float: left;
+        }
+        .box2{
+            width: 200px;
+            background: rgb(112, 112, 245);
+            padding: 20px;
+            float: left;
             position: relative;
-            /* 부모 요소가 relative */
-        }
-        #rec2{
-            width: 100px;
-            height: 100px;
-            background: rgb(0, 89, 255);
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
-        #rec3{
-            width: 100px;
-            height: 100px;
-            background: rgb(0, 89, 255);
-            position: absolute;
-            top: 0;
-            right: 0;
+            top: 30px;
+            left: -50px;
         }
     </style>
 </head>
 <body>
-    <div id="rec1">
-        <div id="rec2"></div>
-        <div id="rec3"></div>
-    </div>
+    <div class="box1">박스1</div>
+    <div class="box2">박스2</div>
 </body>
 </html>

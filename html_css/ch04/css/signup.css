@@ -1,0 +1,17 @@
+#container {width: 650px; margin:10px auto;}
+fieldset{margin-bottom: 20px;}
+
+/* list 스타일 */
+ul li{list-style: none; margin: 15px}
+ul li label{width: 120px; float: left;}
+
+/* 텍스트 필드 스타일 */
+ul li input{width: 200px; height: 30px;}
+
+/* 드롭다운 메뉴 스타일 */
+select{width: 120px; height: 30px;}
+
+/* 버튼 스타일 */
+#button{width: 400px; margin: 20px auto; text-align: center;}
+#button input{width: 150px; height: 50px; font-size: 20px; margin: 5px;}
+#button input:hover{background-color: rgb(16, 189, 53); color: #fff; border-color: #ccc;}
