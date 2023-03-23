@@ -1,20 +1,44 @@
 *{margin: 0; padding: 0;}
-#container{width: 1000px; margin: 0 auto;}
+#container{
+    width: 1000px;
+    margin: 0 auto;
+}
 
-/* header 스타일*/
-header{height: 80px; background: #006699;}
-header #logo{width: 200px; float: left;  padding-left: 25px; line-height: 80px;}
-header h1{color: #fff; margin:0}
-header h1:hover{color: #2fb2fd}
-nav{width: 750px; height: 100%; float:right;}
-nav ul{list-style: none; line-height: 80px; margin-right: 50px;}
-nav ul li{float: right;}
-nav ul li a{display: block; padding: 0 30px;}
-a:link, a:visited{
+/* header 영역 스타일 */
+header{
+    /* width 생략 - 1000px 사용 */
+    height: 80px;
+    background-color: #006699;
+}
+header #logo{
+    width: 200px; float:left;
+    line-height: 80px;
+}
+header h1{
+    padding-left: 20px;
+}
+header h1 a{
+    color: #fff;
     text-decoration: none;
+}
+header h1 a:hover{color: yellowgreen;}
+header nav{
+    width: 750px; float: right;
+    line-height: 80px;
+    margin-right: 50px;
+}
+nav ul{list-style: none;}
+nav ul li{float: right;}
+ul li a{
+    display: block;
+    padding: 0 20px;
+    color: #fff;
+    text-decoration: none;
+}
+ul li a:hover{
+    background-color: #2fb2fd;
     color: #fff;
 }
-a:hover{background-color: #2fb2fd; color: #fff}
-
-/* section 스타일 */
-section{padding: 20px;}
+section h2{
+    margin: 20px;
+}
