@@ -1,0 +1,18 @@
+*{margin: 0; padding: 0;}
+.container {width: 960px; margin : 0 auto;}
+nav{height: 80px; text-align: center;}
+nav ul{list-style: none; border-bottom:2px solid #ccc; padding: 15px; }
+nav ul li {display: inline-block; margin: 10px 20px;}
+nav a:link, a:visited{
+  text-decoration: none;
+  color:#000;
+  padding: 10px; 
+  font-size:14px;
+}
+/* focus - 탭키 누름 */
+nav a:hover,  a:focus {
+  background-color:#222;
+  color:#fff;
+}
+/* 마우스 클릭 */
+nav a:active {background-color:#f00;}

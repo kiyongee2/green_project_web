@@ -1,0 +1,15 @@
+#container{width: 700px; margin: 0 auto;}
+nav {border-bottom: 1px solid black;}
+nav ol {
+  list-style: none;
+  padding-left: 0;
+}
+nav ol li {display: inline-block;}
+nav a{text-decoration: none;}
+nav a::after {
+  content: '>';
+  color: #000;
+  font-size: 80%;
+  font-weight: bold;
+  padding: 0 10px;
+}

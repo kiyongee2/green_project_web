@@ -1,0 +1,22 @@
+.container {width: 960px; margin: 0 auto;}
+.contents {
+  width:400px;
+  margin: 0 auto;
+  border:1px solid #222;
+  border-radius:5px; 
+  padding:20px;
+}
+.contents :first-child{
+  /* 모든 자식 요소중 첫번째 자식 요소 
+     선택자 앞에 1칸 띄어줌 */
+  color: red;
+}
+.contents :nth-child(3) { /* 자식 요소중 3번째 요소*/
+  background-color:#ffff00;
+}
+.contents p:nth-of-type(3) { /*p 태그 중 3번째 위치*/
+  background-color:#00ff00;
+} 
+.contents :last-child{ /* 모든 자식 요소중 마지막 자식 요소 */ 
+  color: blue;
+} 
