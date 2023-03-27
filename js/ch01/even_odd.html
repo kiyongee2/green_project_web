@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>짝수/홀수 판정</title>
+    <script>
+      //입력
+      let num = prompt("수를 입력하세요 :", "1~50");
+      num = parseInt(num)
+
+      //연산
+      var result = (num % 2 == 0) ? "짝수입니다" : "홀수입니다.";
+
+      //출력
+      document.write(num + "은(는) " + result);
+
+
+      /*if(num == null){
+        document.write("입력이 취소되었습니다.")
+      }else{
+        //연산
+        var result = (num % 2 === 0) ? "짝수입니다" : "홀수입니다.";
+
+        //출력
+        document.write(num + "은(는) " + result); 
+      }*/
+      
+      
+    </script>
+</head>
+<body>
+
+</body>
+</html>
