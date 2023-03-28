@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수</title>
+    <style>
+        .content{
+            width: 700px; 
+            margin: 0 auto; 
+            text-align: center;
+        }
+        button{
+            margin: 10px 10px 20px 10px; 
+            font-size: 1.3em; 
+        }
+        p{
+            font-size: 1.3em; 
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h2>나이를 계산하는 프로그램</h2>
+        <button onclick="calcAge()">계산하기</button>
+        <hr>
+        <p id="show"></p>
+    </div>  
+
+    <script>
+        function calcAge(){
+            const  CURRENT_YEAR = 2023;
+            var birthYear = prompt("출생 년도를 입력하세요", "yyyy");
+
+            var age = CURRENT_YEAR - parseInt(birthYear) + 1;
+            
+            document.getElementById("show").innerHTML = 
+                "당신의 나이는 " + age + "세 입니다.";
+        }
+    </script>
+</body>
+</html>

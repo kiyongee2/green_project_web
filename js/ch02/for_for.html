@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>별 출력하기</title>
+</head>
+<body>
+    <script>
+        //5행 5열의 별 출력
+        let i, j;
+        
+        for(i = 0; i < 5; i++){ //행이 5번 반복
+            for(j = 0; j < 5; j++){ //열이 5번 반복
+                document.write("가")
+            }
+            document.write('<br>');  //행 바꿈
+        }
+
+        for(i = 0; i < 5; i++){ //행이 5번 반복
+            for(j = 0; j < 5; j++){ //열이 5번 반복
+                document.write("*")
+            }
+            document.write('<br>');  //행 바꿈
+        }
+        /*
+          i = 0,  j = 0, 1, 2, 3, 4   *****
+          i = 1,  j = 0, 1, 2, 3, 4   *****
+          i = 2,  j = 0, 1, 2, 3, 4   *****
+          i = 3,  j = 0, 1, 2, 3, 4   *****
+          i = 4,  j = 0, 1, 2, 3, 4   *****
+        */
+
+        //직각삼각형 모양의 별
+        for(i = 0; i < 5; i++){ //행이 5번 반복
+            for(j = 0; j < i+1; j++){ //열이 5번 반복
+                document.write("*")
+            }
+            document.write('<br>');  //행 바꿈
+        }
+         /*
+          i = 0,  j = 0             *
+          i = 1,  j = 0, 1          **
+          i = 2,  j = 0, 1, 2       ***
+          i = 3,  j = 0, 1, 2, 3    ****
+          i = 4,  j = 0, 1, 2, 3, 4 *****
+        */
+
+        //역 직각삼각형 모양
+        for(i = 0; i < 5; i++){ //행이 5번 반복
+            for(j = 0; j < 5 - i; j++){ //열이 5번 반복
+                document.write("*")
+            }
+            document.write('<br>');  //행 바꿈
+        }
+
+        //역 직각삼각형 모양
+        for(i = 0; i < 5; i++){ //행이 5번 반복
+            for(j = 5; j > i; j--){ //열이 5번 반복
+                document.write("*")
+            }
+            document.write('<br>');  //행 바꿈
+        }
+
+    </script>
+</body>
+</html>

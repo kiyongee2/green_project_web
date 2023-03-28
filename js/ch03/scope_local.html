@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수</title>
+</head>
+<body>
+  <h3>지역변수의 유효 범위</h3>
+  <script>
+      function oneUp(){
+          let x = 1;  //x는 지역 변수
+          x = x + 1;
+          return x;
+      }
+
+      let num = oneUp();  //호출되면 x는 2를 반환하고 소멸함
+      
+      document.write("num = " + num);  //2
+      document.write("x = " +  x); //오류
+  </script>
+</body>
+</html>

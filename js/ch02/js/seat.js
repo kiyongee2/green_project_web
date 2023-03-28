@@ -10,10 +10,10 @@ else{ //나머지가 있으면 한 줄(행)이 더 필요
 }
 
 document.write('<table>');
-for(let i=0; i<rowNum; i++){
+for(let i = 0; i < rowNum; i++){
   document.write('<tr>');
-  for(let j=1; j<=colNum; j++){
-    let seatNum = i * colNum + j;
+  for(let j = 1; j <= colNum; j++){
+    let seatNum = colNum * i + j;
     if(seatNum > customNum)
       break;
     document.write("<td>좌석" + seatNum + '</td>');

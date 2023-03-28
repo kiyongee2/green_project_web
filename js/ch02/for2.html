@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반복문</title>
+</head>
+<body>
+    <script>
+        //1부터 n까지의 합계 구하기
+        //입력
+        let sum_v = 0;
+        let num = prompt("몇 까지의 합을 계산할까요? ", "1")
+        
+        //반복 연산
+        for(let i = 1; i <= num; i++){
+            sum_v += i;
+        }
+        //출력
+        document.write("1부터 " + num + "까지의 합계 : " + sum_v);
+    </script>
+</body>
+</html>
