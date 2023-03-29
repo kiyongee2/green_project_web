@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수</title>
+    <style>
+        button{margin-top: 20px;}
+        #item{
+          width: 400px; height: 300px; 
+          border: 1px solid #ccc;
+          margin-top: 10px;
+        }
+      </style>
+</head>
+<body>
+    <button onclick="show()">보이기</button>
+    <button onclick="hide()">숨기기</button>
+    <div id="item">
+        <img src="./images/flower.jpg" alt="꽃" id="pic">
+    </div>
+
+    <script>
+        function show(){ //이미지 보이기
+            document.getElementById('pic').style.display = "block";
+        }
+    
+        function hide(){ //이미지 숨기기
+            document.getElementById('pic').style.display = "none";
+        }
+    </script>
+</body>
+</html>

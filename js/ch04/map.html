@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열</title> 
+</head>
+<body>
+    <h2>map() 함수</h2>
+
+    <p id="sqrt"></p>
+    <p id="times"></p>
+
+    <script>
+        const numbers = [4, 9, 16, 25];
+
+        //배열 복사
+        // let arr = [];
+        // arr = numbers;
+        let arr = new Array(4);
+        arr = numbers;
+        console.log(arr);
+        // console.log(arr.toString());
+
+        //제곱근 계산
+        const numbers2 = numbers.map(Math.sqrt)
+        document.getElementById("sqrt").innerHTML = numbers2; 
+        console.log(numbers2);
+
+        //배수 계산
+        const newArr = numbers.map(myFunction);
+
+        function myFunction(num) {
+            return num * 10;
+        }
+        document.getElementById("times").innerHTML = newArr;
+        console.log(newArr);
+    </script>
+</body>
+</html>
