@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>continue문</title>
+    <script>
+        //1부터 30까지의 3의 배수 구하기
+        document.write("30까지의 3배수 구하기<br>")
+        let i;
+
+        for(i = 1; i <= 30; i++){
+            if(i % 4 === 0){
+                document.write(i + " "); 
+            }
+        }
+
+        document.write("<br><br>continue문을 사용한 경우<br>")
+        for(i = 1; i <= 30; i++){
+            if(i % 4 !== 0){
+                continue;   //아래로 내려가지 않고 다시 위로 올라감
+            }
+            document.write(i + " ");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

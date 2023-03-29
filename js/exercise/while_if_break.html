@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반복문</title>
+</head>
+<body>
+    <script>
+        //1부터 더했을때 100이 넘는 자연수 구하기
+        var n = 0, sum_v = 0;
+        
+        while(true){  
+            n += 1;
+            sum_v += n;
+            if(sum_v > 100)
+                break;
+            console.log("n=" + n + ", sum_v=" + sum_v);
+        }
+        document.write("n =" + n + '<br>');
+        document.write("sum_v = " + sum_v);
+    </script>
+</body>
+</html>

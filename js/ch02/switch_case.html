@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자리 배치</title>
+</head>
+<body>
+    <h2>대회 메달 출력하기</h2>
+    <script>
+        let rank = 3;  //정수형 변수 rank 선언
+        switch(rank){
+            case 1:
+                document.write("금메달입니다<br>");
+                break;
+            case 2:
+                document.write("은메달입니다<br>");
+                break;
+            case 3:
+                document.write("동메달입니다<br>");
+                break;
+            default:
+                document.write("메달이 없습니다.<br>");
+                break;
+        }
+
+        //rank = 2;
+        
+        if(rank==1){
+            document.write("금메달입니다<br>"); 
+        }
+        else if(rank==2){
+            document.write("은메달입니다<br>"); 
+        }
+        else if(rank==3){
+            document.write("동메달입니다<br>"); 
+        }
+        else{
+            document.write("메달이 없습니다<br>"); 
+        }
+    </script>
+</body>
+</html>
