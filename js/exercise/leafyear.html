@@ -18,9 +18,9 @@
   <script>
     //윤년을 알려주는 프로그램
     //조건 - 4년마다 오며 100년 단위는 윤년이 아니나, 400년 단위로는 윤년이다.
-    let year = prompt("연도를 입력하세요", "2021");
+    let year = prompt("연도를 입력하세요", "2023");
     
-    if(year == null){
+    if(year == null || isNaN(year)){
         document.write("입력이 취소되었습니다.");
     }
     else{

@@ -13,7 +13,7 @@
         }
         button{
             margin: 10px 10px 20px 10px; 
-            font-size: 1.3em; 
+            font-size: 1.1em; 
         }
         p{
             font-size: 1.3em; 
@@ -30,14 +30,18 @@
     </div>  
 
     <script>
-        function calcAge(){
-            const  CURRENT_YEAR = 2023;
-            var birthYear = prompt("출생 년도를 입력하세요", "yyyy");
+        function calcAge(){  
+            const CURRENT_YEAR = 2023;
+            var birthYear = parseInt(prompt("출생 년도를 입력하세요", "yyyy"));
 
-            var age = CURRENT_YEAR - parseInt(birthYear) + 1;
-            
-            document.getElementById("show").innerHTML = 
-                "당신의 나이는 " + age + "세 입니다.";
+            if(birthYear == null || isNaN(birthYear)){
+                document.getElementById("show").innerHTML = "입력이 취소되었습니다.";
+            }else{
+                var age = CURRENT_YEAR - birthYear + 1;
+                
+                document.getElementById("show").innerHTML = 
+                    "당신의 나이는 " + age + "세 입니다.";
+            }
         }
     </script>
 </body>
