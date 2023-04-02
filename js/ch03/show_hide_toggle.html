@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수</title>
+    <style>
+        button{margin: 10px;}
+      </style>
+</head>
+<body>
+    <button onclick="showHide()" id="btn">숨김</button>
+    <div id="item">
+        <img src="./images/flower.jpg" alt="꽃" id="pic">
+    </div>
+
+    <script>
+        function showHide(){
+            let sw = 0;
+            let pic = document.getElementById('pic');
+            let btn = document.getElementById('btn');
+            if(pic.style.display == "none"){
+                pic.style.display = "block";
+                btn.innerText = "숨김";
+                sw = 1;
+            }else{
+                pic.style.display = "none";
+                btn.innerText = "보임";
+                sw = 0;
+            }
+        }
+    </script>
+</body>
+</html>

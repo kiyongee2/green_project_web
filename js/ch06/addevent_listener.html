@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사용자 객체</title> 
+</head>
+<body>
+    <div>
+        <img src="./images/easys-1.jpg" alt="여자 아이" id="pic">
+    </div>
+
+    <script>
+        let img = document.querySelector("#pic");
+
+        //이벤트 이름 앞의 on을 생략
+        img.addEventListener("mouseover", changePic);
+        img.addEventListener("mouseout", originPic);
+        
+        function changePic(){
+            img.src = "images/easys-2.jpg";
+        }
+        function originPic(){
+            img.src = "images/easys-1.jpg";
+        }
+
+        //실행 함수
+        /*img.addEventListener("mouseover", function(){
+            img.src = "images/easys-2.jpg";
+        });
+
+        img.addEventListener("mouseout", function(){
+            img.src = "images/easys-1.jpg";
+        });*/
+    </script>
+</body>
+</html>

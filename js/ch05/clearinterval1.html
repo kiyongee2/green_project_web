@@ -11,13 +11,19 @@
   <p id="display" class="access"></p>
   <button onclick="myStop()">중지</button>
   <script>
-      let timer = setInterval(watch, 1000);  //1초마다 watch() 작동
+      /*let timer = setInterval(watch, 1000);  //1초마다 watch() 작동
 
       function watch(){
         const date = new Date();   //Date 객체의 인스턴스 생성
         let now = date.toLocaleTimeString();
         document.getElementById('display').innerHTML = now;
-      }
+      }*/
+
+      let timer = setInterval(function(){
+        const date = new Date();   //Date 객체의 인스턴스 생성
+        let now = date.toLocaleTimeString();
+        let a = document.getElementById('display').innerHTML = now;
+      }, 1000)
 
       function myStop(){
         clearInterval(timer);

@@ -10,14 +10,14 @@
     <h3>시간(초)을 시, 분, 초로 환산</h3>
     <p id="display"></p>
     <script>
-        let time = 10000;  
-        //let time = Number(prompt("초를 입력하세요", ""));  
+        //let time = 10000;  
+        let time = Number(prompt("초를 입력하세요", ""));  
         let hour = 0, min = 0; sec = 0;
 
-        min = Math.floor(time / 60);  //분이 기준
-        hour = Math.floor(min / 60);  //분을 초과하면 시간을 계산
+        min = Math.floor(time / 60);  //분이 기준 166.66
+        hour = Math.floor(min / 60);  //분을 초과하면 시간을 계산 2.76 -> 2
         sec = time % 60;  //초는 분을 계산하고 남은 나머지
-        min = min % 60;   //최종 분은 분을 나눈 나머지
+        min = min % 60;   //최종 분은 분을 나눈 나머지 166 % 60 = 46
 
         console.log(min);
         console.log(hour);

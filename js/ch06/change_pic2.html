@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사용자 객체</title> 
+    
+</head>
+<body>
+    <div id="container">
+        <img src="images/cup-1.png" id="cup">		
+    </div>
+    
+    <script>
+        var cup = document.querySelector("#cup"); 
+
+        cup.onclick = changePic;  // changePic에 괄호를 생략
+
+        function changePic() {
+          cup.src = "images/cup-2.png";
+        }
+
+        //객체의 onclick 속성 - 익명 함수
+        // cup.onclick = function(){
+        //     cup.src = "images/cup-2.png";
+        // }
+    </script>
+</body>
+</html>
