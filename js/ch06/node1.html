@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>노드 추가 삭제</title>
+</head>
+<body>
+    <ul id="myList">
+        <li>Coffee</li>
+        <li>Tea</li>
+    </ul>
+    <p>Click the button to insert an item to the list</p>
+    <!-- this.onclick=''은 myFunction()이 한번 실행되도록함 -->
+    <button onclick="myFunction(); this.onclick=''">Try It</button>
+
+    <script>
+        function myFunction(){
+            //<li>Water</li>
+           let newItem = document.createElement("li");
+           let textNode = document.createTextNode("Water");
+           newItem.appendChild(textNode);  //li에 water를 연결
+            
+           //ul 태그에 추가하기
+           let list = document.getElementById("myList");
+           //list.insertBefore(newItem, list.childNodes[0]); //맨위
+           list.appendChild(newItem);  //li태그를 ul에 추가
+        }
+    </script>
+</body>
+</html>

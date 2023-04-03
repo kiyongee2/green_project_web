@@ -13,18 +13,17 @@
     </div>
     
     <script>
-        var cup = document.querySelector("#cup"); 
+        let cup = document.querySelector("#cup");
 
-        cup.onclick = changePic;  // changePic에 괄호를 생략
+        /*cup.onclick = changePic;
 
-        function changePic() {
-          cup.src = "images/cup-2.png";
+        function changePic(){
+            cup.src = "./images/cup-2.png";
+        }*/
+
+        cup.onclick = function(){
+            cup.src = "./images/cup-2.png";
         }
-
-        //객체의 onclick 속성 - 익명 함수
-        // cup.onclick = function(){
-        //     cup.src = "images/cup-2.png";
-        // }
     </script>
 </body>
 </html>

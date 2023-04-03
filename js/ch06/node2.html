@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>노드 추가 삭제</title>
+    <script>
+        function addP(){
+            let newP = document.createElement("p"); //p 태그 생성
+            let text = document.createTextNode("안녕하세요~ 숨겨진 텍스트입니다.");
+            newP.appendChild(text);
+            //document.getElementById("info").appendChild(newP); //div에 p를 추가함
+
+            div = document.getElementById("container");
+            div.appendChild(newP);
+        }
+    </script>
+</head>
+<body>
+    <div id="container">
+        <h1>DOM 노드 추가하기</h1>
+        <a href="#" onclick="addP(); this.onclick='' ">더 보기</a>
+        <div id="info">
+            <!-- p 태그가 생성됨 -->
+        </div>
+    </div>
+</body>
+</html>

@@ -7,27 +7,44 @@
     <title>함수</title>
     <style>
         button{margin: 10px;}
+        .pic{display: none;}
       </style>
 </head>
 <body>
-    <button onclick="showHide()" id="btn">숨김</button>
+    <button onclick="showHide()" id="btn">보이기</button>
     <div id="item">
-        <img src="./images/flower.jpg" alt="꽃" id="pic">
+        <img src="./images/flower.jpg" alt="꽃" id="pic" class="pic">
     </div>
 
     <script>
-        function showHide(){
-            let sw = 0;
+
+        /*function showHide(){
             let pic = document.getElementById('pic');
             let btn = document.getElementById('btn');
             if(pic.style.display == "none"){
                 pic.style.display = "block";
-                btn.innerText = "숨김";
-                sw = 1;
+                btn.innerText = "숨기기";
             }else{
                 pic.style.display = "none";
-                btn.innerText = "보임";
-                sw = 0;
+                btn.innerText = "보이기";
+            }
+        }*/
+
+        //토글 방식
+        let sw = true;  //전역 변수
+
+        function showHide(){
+            let pic = document.getElementById('pic');
+            let btn = document.getElementById('btn');
+            if(sw){
+                pic.style.display = "block";
+                btn.innerText = "숨기기";
+                sw = false;
+            }
+            else{
+                pic.style.display = "none";
+                btn.innerText = "보이기";
+                sw = true;
             }
         }
     </script>
