@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //checked 속성 사용
+        function check(){
+            document.getElementById("myCheck").checked = true;
+        }
+        //함수이름은 대,소문자 허용 안함
+        function uncheck(){
+            document.getElementById("myCheck").checked = false;
+        }
+    </script>
+</head>
+<body>
+    <div>
+        Checkbox : <input type="checkbox" id="myCheck">
+        <button onclick="check()">Check Checkbox</button>
+        <button onclick="uncheck()">Uncheck Checkbox</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사용자 객체</title> 
+    
+</head>
+<body>
+    <div id="container">
+        <img src="images/cup-1.png" id="cup">		
+    </div>
+    <button onclick="myStart()">시작</button>
+    <button onclick="myStop()">중지</button>
+    
+    <script>
+        let cup = document.querySelector("#cup");
+        let state = 0;
+        let timer;
+        
+        function myStart(){
+            timer = setInterval(function(){
+                if(state==0){
+                    cup.src = "./images/cup-2.png";
+                    state = 1;
+                }
+                else{
+                    cup.src = "./images/cup-1.png";
+                    state = 0;
+                }
+            }, 1000)
+        }
+        
+        function myStop(){
+            clearInterval(timer);;
+        }
+    </script>
+</body>
+</html>

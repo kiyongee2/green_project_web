@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>노드 추가 삭제</title>
+    <script>
+        function addContents(){
+          let newP = document.createElement('p');
+          let text = document.createTextNode("은은하고 다채로운 꽃향")
+          newP.appendChild(text);
+    
+          let newImg = document.createElement('img');
+          let src = document.createAttribute('src');  //src 속성 추가
+          let alt = document.createAttribute('alt')   //alt 속성 추가
+          src.value = "images/coffee-blue.jpg";
+          alt.value = "커피 이미지";
+          newImg.setAttributeNode(src);   //img 태그에 연결
+          newImg.setAttributeNode(alt);
+    
+          document.getElementById('info').appendChild(newP);   //div 태그에 생성
+          document.getElementById('info').appendChild(newImg);
+        }
+    </script>
+</head>
+<body>
+    <div id="container">
+        <h1>에디오피아 게뎁 커피</h1>
+        <a href="#" onclick="addContents(); this.onclick=''">더 보기</a>
+        <div id = "info"></div>
+    </div>
+</body>
+</html>
