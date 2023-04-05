@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RegExp 객체</title>
+</head>
+<body>
+    <p>test() 함수는 일치된 것을 찾으면 true, 못찾으면 false를 반환한다.</p>
+
+    <script>
+        //문자열 일치 체크
+        let pattern = new RegExp('H')
+        let match = pattern.test("Hello~ My Site!")
+        document.write(match)
+        document.write("<br>")
+        
+        //아이디 글자수 체크
+        let regEx = /^[0-9A-Za-z]{5}$/
+        id = "234a"
+        document.write(regEx.test(id))
+    </script>
+</body>
+</html>

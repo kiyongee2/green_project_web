@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date 내장 객체</title> 
+</head>
+<body>
+    <h2>The forEach() Method</h2>
+
+    <p>forEach()는 배열에서 각 요소에 대한 함수를 호출한다.</p>
+
+    <p id="demo"></p>
+
+    <script>
+        //배열이름.foreach(함수)
+        let text = "";
+        const fruits = ["apple", "orange", "cherry"];
+        fruits.forEach(myFunction);
+
+        document.getElementById("demo").innerHTML = text;
+        
+        function myFunction(item, index) {
+            text += index + " : " +item + "<br>"; 
+        }
+    </script>
+</body>
+</html>

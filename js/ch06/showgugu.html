@@ -19,6 +19,7 @@
             let strN = document.getElementById("myNum").value;
             let n = parseInt(strN);
             document.getElementById("x").innerHTML = n;
+            document.getElementById("myNum").value = "";
 
             for(var i = 1; i <= 9; i++ ){
                 let newDiv = document.createElement("div");

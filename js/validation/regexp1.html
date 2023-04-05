@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RegExp 객체</title>
+</head>
+<body>
+  <p>정규 표현식 - RegExp 객체</p>
+
+  <button onclick="search()">검색</button>
+  <p id = 'demo'></p>
+
+  <script>
+    function search(){
+      let str = "The best things in life are free.";
+      let pattern = new RegExp('best');
+      let match = pattern.test(str);
+
+      document.getElementById('demo').innerHTML = match;
+    }
+  </script>
+</body>
+</html>
