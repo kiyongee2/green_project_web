@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미디어 쿼리</title>
+    <style>
+        /* 가로가 768px 이하면 bg3.jpg 지정 */
+        body{
+            height: 2000px;
+            background: url(images/bg3.jpg) no-repeat fixed;  
+            background-size: cover; 
+        }
+        /* 가로가 768px 이상이면 bg2.jpg 지정 */
+        @media screen and (min-width:768px) {
+          body {
+            background: url(images/bg2.jpg) no-repeat fixed;  
+            background-size:cover;
+          }
+        }
+        /* 가로가 1024px 이상이면 bg1.jpg 지정 */
+        @media screen and (min-width:1024px) {
+          body {
+            background: url(images/bg1.jpg) no-repeat fixed;  
+            /* background-size: cover; */
+          }
+        }
+    </style>
+</head>
+<body>
+
+</body>
+</html>

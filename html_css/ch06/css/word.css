@@ -1,0 +1,20 @@
+/* 모바일 기준 */
+body{background-color: rgb(1, 1, 165);}
+#container{width: 320px; margin: 0 auto;}
+.card{width: 300px; height: 500px; background-color: #fff; 
+      margin: 20px 10px; position: relative; }
+.word{position: absolute; top: 300px; left: 10px; 
+      text-align: center; padding-right: 10px;}
+
+/* 태블릿 기준 */
+@media screen and (min-width: 768px) {
+  #container{width: 570px;}
+  .card{width: 550px; height: 250px; position: relative;}
+  .word{position:absolute; top: 50px; left: 310px;}
+}
+
+/* PC 기준 */
+@media screen and (min-width: 1710px) {
+  #container{width: 1710px;}
+  .card{float: left;}
+}

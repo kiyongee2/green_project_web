@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation 속성</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            border: 1px solid #333;
+            margin: 50px;
+            float: left;
+        }
+        #box1{
+            background-color: green;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            /* animation-name: shape; */
+            /* animation-duration: 3s; */
+            /* animation-iteration-count: 3; */
+            animation-fill-mode: forwards;
+            animation: shape 3s 3;
+        }
+        #box2{
+            background-color: pink;
+            /* animation-name: rotate;
+            animation-duration: 1s;
+            animation-iteration-count: infinite; */
+            animation: rotate 1s infinite;
+        }
+
+        @keyframes shape {
+            from{
+                background-color: green;
+                border-radius: 0;
+            }
+            to{
+                background-color: lightgreen;
+                border-radius: 50%;
+            }
+        }
+
+        @keyframes rotate {
+            from{
+                /* 시계방향으로 기본 0도 */
+                transform: rotate(0);
+            }
+            50%{
+                transform: rotate(45deg);
+            }
+            to{
+                /* 시계방향으로 90도 회전 */
+                transform: rotate(90deg)
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="box1"></div>
+    <div id="box2"></div>
+</body>
+</html>

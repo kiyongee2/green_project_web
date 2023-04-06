@@ -16,8 +16,8 @@ nav{float: right; width: 900px; height: 100px; padding-top: 40px;}
 #topMenu > li > a{display: block; color: #fff; padding: 20px 60px; font-weight: 600;}
 #topMenu > li > a:hover{color: #000;}
 /* 서브 메뉴 */
-#topMenu > li > ul{display: none; position: absolute; width: 160px; 
-    background: rgba(246, 248, 213, 0.6); left: 20px;}
+#topMenu > li > ul{width: 160px; display: none; position: absolute; left: 20px;
+    background: rgba(246, 248, 213, 0.6); }
 #topMenu > li:hover > ul{display: block; z-index: 10;}
 #topMenu > li > ul > li{padding: 10px 10px 10px 30px;}
 #topMenu > li > ul > li > a{font-size: 14px; padding: 10px; color: #000}
