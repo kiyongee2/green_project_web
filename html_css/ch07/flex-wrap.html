@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미디어 쿼리 사용</title>
+    <style>
+      .container {
+        width:400px;
+        border: 1px solid #000;
+        background-color:#eee;
+        display:flex;
+        /*flex-wrap: nowrap;  /*기본값: 줄을 바꾸지 않음(컨테이너 범위를 벗어남)*/
+        /*flex-wrap: wrap;  /*교차축으로 아래로 배치됨(컨테이너 범위내에 배치)*/
+        flex-wrap: wrap-reverse; /*교차축에서 순서를 역순으로 배치 */
+      }
+      .box {
+        width:80px;
+        background-color:#000;  
+        margin:5px; 
+        padding:5px 50px;
+      }              
+      p {color:#fff; text-align: center;}
+    </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box"><p>1</p></div>
+    <div class="box"><p>2</p></div>
+    <div class="box"><p>3</p></div>
+    <div class="box"><p>4</p></div>
+    <div class="box"><p>5</p></div>
+    <div class="box"><p>6</p></div>
+  </div>              
+</body>
+</html>

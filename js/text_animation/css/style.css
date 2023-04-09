@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+*{margin: 0; padding: 0;}
+body{height: 2000px;}
+section{
+    height: 1000px;
+    background: url("../images/desert.jpg") no-repeat fixed;
+    background-size: cover;
+}
+h1{
+    width: 200px;
+    font-size: 5em;
+    color: #fff;
+    position: absolute;
+    top: 100px;
+    left: 300px;
+    animation: slide 1s ease-out;
+}
+@keyframes slide {
+    from{
+        left: -100px;
+        opacity: 0;  /* 투명 */
+    }
+    to{
+        left: 300px;
+        opacity: 1; /*불투명*/
+    }
+}
+@keyframes back {
+    from{
+        left: 300px;
+        opacity: 1;
+    }
+    to{
+        left: -100px;
+        opacity: 0;
+    }
+}

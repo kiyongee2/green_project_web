@@ -31,13 +31,12 @@ nav{float: right; width: 900px; height: 100px; padding-top: 40px;}
 #tabMenu label:hover{color: #222; cursor: pointer;}
 #tabMenu input:checked + label{color: #b00; 
     border: 1px solid #ddd; background: #eee;}
-/* 공지사항은 checked 이므로 처음부터 보이고 갤러리는 숨김 */
+/* 공지사항은 checked 이므로 처음부터 보이고 갤러리는 보이지 않음 */
 .tabContent{display: none; padding: 20px 0 0; 
     border-top: 1px solid #ddd;}
 .tabContent h2{display: none;}
 /* 형제 선택자 '~', 부모는 tabMenu*/
-#tab1:checked ~ #notice,
-#tab2:checked ~ #gallery{display: block;}
+#tab1:checked ~ #notice, #tab2:checked ~ #gallery{display: block;}
 #notice ul{list-style: square; margin-left: 30px;}
 #notice ul li{font-size: 16px; line-height: 2.5;}
 #gallery ul li{display: inline;}
