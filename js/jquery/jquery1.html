@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery - 제이쿼리</title>
+    <script src="./js/jquery-3.6.4.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("h2").css("color", "blue");
+            $(".intro").css("background", "greenyellow");
+            //$(".intro").next('p').css('font-weight', 'bold');
+            $('.intro').next('p').css({'font-weight':'bold', 'color':'red'});
+        });
+    </script>
+</head>
+<body>
+    <h2>어서오세요~ 방문을 환영합니다.</h2>
+    <div class="info">
+        <p class="intro">내 이름은 김초엽입니다.</p>
+        <p>나는 서울에 살고 있어요.</p>
+    </div>
+</body>
+</html>

@@ -45,10 +45,13 @@
 
         //화살표 함수
         //const map1 = numbers.map(x => {return x * 2})
-        const map1 = numbers.map(x =>  x * 2) //한 줄일 경우 return 생략
-        document.getElementById("demo").innerHTML = map1;
+        /*const map1 = numbers.map(x =>  x * 2) //한 줄일 경우 return 생략
+        document.getElementById("demo").innerHTML = map1;*/
 
-        const names = ["Kim", "Lee", "Park"];
+        const map2 = numbers.map(x => x + 1)
+        document.getElementById("demo").innerHTML = map2;
+
+        /*const names = ["Kim", "Lee", "Park"];
         const hearts = names.map(item => {
             return item + "★";})
         console.log(hearts)
@@ -56,7 +59,7 @@
 
         const hearts2 = names.map((item, index) => {
             return index + ": " + item + " 💖";})
-        document.getElementById("demo").innerHTML = hearts2;
+        document.getElementById("demo").innerHTML = hearts2;*/
 
     </script>
 </body>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery - 제이쿼리</title>
+    <script src="./js/jquery-3.6.4.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".add").click(function(){
+                //html() - 선택한 요소의 하위요소들을 새 텍스트로 변경
+                $(".pic").html("<img src='images/bear.jpg' alt='bear'>");
+                $(".pic").css('margin-top', '10px');
+            })
+        });
+    </script>
+</head>
+<body>
+    <a href="#" class="add">사진 추가</a>
+    <div class="pic"></div>
+</body>
+</html>
