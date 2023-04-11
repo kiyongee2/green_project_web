@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery - 제이쿼리</title>
+    <script src="./js/jquery-3.6.4.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".up").click(function(){
+                $("p").slideUp();
+            });
+            $(".down").click(function(){
+                $("p").slideDown();
+            });
+            $(".toggle").click(function(){
+                $("p").slideToggle();
+            });
+        });
+    </script>
+</head>
+<body>
+    <p>운수좋은 날</p>
+    <p>Good Luck!</p>
+    <p>운수좋은 날</p>
+    <p>Good Luck!</p>
+    <p><img src="images/bear.jpg" alt="곰인형"></p>
+
+    <button class="up">Up</button>
+    <button class="down">Down</button>
+    <button class="toggle">UpDown</button>
+</body>
+</html>
