@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+</head>
+<body>
+    <div id="m1"><strong>내용</strong></div>
+
+    <script>
+        $(function(){
+            $("#m1").prepend("<p>삽입1_1</p>");
+            $("#m1").append("<p>삽입1_2</p>");
+            $("#m1").before("<p>삽입1_3</p>");
+            $("#m1").after("<p>삽입1_4</p>");   
+        })
+    </script>
+</body>
+</html>

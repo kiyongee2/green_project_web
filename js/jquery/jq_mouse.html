@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <style>
+        * {margin: 0;padding: 0;}
+        .pic {
+            background: #ccc;
+        }
+        .pic img {
+            transform: translateX(-200px);
+            transition: 0.5s ease-out;
+            vertical-align: top;
+        }
+        .pic img.on {
+            transform: translateX(0);
+        }
+        button {
+            width: 200px;
+            height: 50px;
+            border: none;
+            background: #333;
+            color: #fff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="pic">
+        <img src="./images/bear.jpg" alt="곰인형">
+    </div>
+    <button>hover 이벤트</button>
+
+    <script>
+        $(function(){
+            $("button").mouseenter(function() {
+                $(".pic img").toggleClass("on");
+            }).mouseleave(function() {
+                $(".pic img").toggleClass("on");
+            }); 
+            
+            /*$("button").hover(function() {
+                $(".pic img").toggleClass("on");
+            });*/
+        })
+    </script>
+</body>
+</html>
