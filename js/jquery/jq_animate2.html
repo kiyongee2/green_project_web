@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery - 제이쿼리</title>
+    <script src="./js/jquery-3.6.4.js"></script>
+    <style>
+        .btn{margin: 30px 0 10px 20px;}
+        .box{
+            width: 100px;
+            height: 100px;
+            background: #0f0;
+            margin-left: 20px;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $('button:eq(0)').click(function(){
+                $('.box').animate({height: 300}, 2000)
+                         .animate({width: 200}, 2000)
+            });
+            //stop()
+            $('button:eq(1)').click(function(){
+                $('.box').stop();
+            });
+            //delay()
+            $('button:eq(2)').click(function(){
+                $('.box').delay(2000).slideUp();
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="btn">
+        <button type="button">Start</button>
+        <button type="button">Stop</button>
+        <button type="button">Delay</button>
+    </div>
+
+    <div class="box"></div>
+</body>
+</html>

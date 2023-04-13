@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery - 제이쿼리</title>
+    <script src="./js/jquery-3.6.4.js"></script>
+    <style>
+        * {margin: 0; padding: 0;}
+        #wrap{height: 2000px;}
+        #up{
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;   
+            transition: all 0.5s ease;
+            opacity: 0;
+            visibility: hidden;
+        }
+        #up.on{
+            opacity: 1;    
+            visibility: visible;
+        }
+        #up a{
+            display: block;
+            padding: 20px;
+            text-align: center;            
+            background: #333;
+            text-decoration: none;
+            color: #fff;
+        }
+    </style>    
+    <script>
+        $(document).ready(function(){
+            var isOn = false;
+            $(window).scroll(function() {
+               if($(this).scrollTop() > 100){
+                   if(!isOn) {
+                    $("#up").addClass("on");
+                       isOn = true;
+                   }                   
+               }else{
+                   if(isOn) {
+                       $("#up").removeClass("on");
+                       isOn = false;
+                   }                   
+               }
+            });
+            $("#up a").click(function() {
+                $(window).scrollTop(0);                
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="wrap"></div>
+    <div id="up"><a href="javascript:;">TOP</a></div>
+</body>
+</html>
