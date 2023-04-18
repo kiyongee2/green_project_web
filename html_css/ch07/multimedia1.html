@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가변 폰트 - vw, vh</title>
+    <style>
+       :root{
+            /* color */
+            --red-color: rgb(231, 3, 3);
+            --blue-color: #045fd4;
+        }
+        section h1{color: var(--blue-color)}
+
+        *{margin:0; padding:0;}
+
+        #wrap{
+            width:90%;
+            /* 960px */
+            margin:0 auto;
+            border:4px solid #000;
+        }
+
+        #wrap div{
+            width:50%;
+            /* display:inline-block; */
+            float: left;
+        }
+
+        img, video{
+            width:100%;
+            max-width:100%;
+            /* max-width: 800px; */
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+		<div>
+			<video controls preload="auto">
+			    <source src="source/video.mp4" type='video/mp4'></source>
+			    <source src="source/video.ogv" type='video/ogg'></source>
+			    <source src="source/video.webm" type='video/webm'></source>
+		    </video>
+		</div>
+        <div><img src="source/img_01.jpg"></div>
+	</div>
+</body>
+</html>

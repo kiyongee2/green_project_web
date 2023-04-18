@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calc() 함수</title>
+    <style>
+        *{margin:0; padding:0;}
+        #wrap{
+            width: 90%;
+            height: 500px;
+            margin: 0 auto;
+            border: 4px solid #000;
+        }
+        /* 
+           calc() 함수 - 박스는 가변적이되 마진이나 패딩은 고정시킬때 사용.
+           50px 크기의 고정 마진을 적용하기 위해 calc() 함수 사용 
+            왼쪽, 오른쪽 패딩값을 더한 값인 100px을 뺀 값을 너비값으로 설정
+        */
+        #wrap div{
+            width: 90%;
+            /* width: calc(100% - 100px); */
+            height: 200px;
+            margin: 50px;
+            background: orange;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div></div>
+    </div>
+</body>
+</html>

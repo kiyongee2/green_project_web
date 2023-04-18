@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* rem은 스타일 상속 문제를 해결해 줌 
+           1em = 16px;  부모 기준의 상대 크기임
+           1rem = 16px; 고정크기
+        */
+        /* body{
+            font-size: 12px;
+        } */
+        p{
+            font-size: 5em;
+        }
+        p span{
+            /* font-size: 5em; */
+            font-size: 5rem;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        rem 단위!
+        <span>rem 단위!</span>
+    </p>
+</body>
+</html>
