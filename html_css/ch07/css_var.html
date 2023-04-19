@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>var() 함수</title>
+    <style>
+        :root{
+            /* color */
+            --red-color: rgb(212, 60, 60);
+            --blue-color: rgb(66, 66, 235);
+
+            /* background */
+            --green-color: rgb(45, 238, 45);
+
+            /* margin */
+            --my-2: 0.5rem;
+            --my-3: 1rem;
+        }
+        h1{
+            color: var(--red-color);
+        }
+        div{
+            width: 100px;
+            height: 100px;
+            background: var(--green-color);
+            margin: var(--my-3);
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Software Engineer</h1>
+    <div></div>
+    <div></div>
+</body>
+</html>
