@@ -1,0 +1,71 @@
+/* 공통 스타일 */
+:root{
+    --text-color: rgb(237, 237, 237); 
+}
+body{
+    margin: 0; 
+}
+a{
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+/* PC 기준 */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(7, 7, 104);
+}
+.navbar_logo{
+    font-size: 24px;
+    color: var(--text-color);
+    padding-left: 12px;
+}
+.navbar_logo i{
+    color: greenyellow;
+}
+.navbar_menu{
+    display: flex;
+    list-style: none;
+    margin-right: 15%;
+    padding-left: 0;
+}
+.navbar_menu li{
+    padding: 8px 12px;   
+}
+.navbar_menu li:hover{
+    background-color: rgb(2, 181, 2);  
+    border-radius: 4px;
+}
+.navbar_toggleBtn{
+    position: absolute;
+    right: 30px;
+    font-size: 24px;
+    display: none;
+}
+
+/* 모바일 기준 - 768px 미만*/
+@media screen and (max-width: 768px) {
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 24px;
+    }
+    .navbar_menu{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        display: none;
+    }
+    .navbar_menu li{
+        width: 100%;
+        text-align: center;
+    }
+    .navbar_toggleBtn{
+        display: block;
+    }
+    .navbar_menu.active{
+        display: flex;
+    }
+}

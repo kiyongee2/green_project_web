@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>classList 객체 사용</title>
+    <style>
+        .active {
+            background-color: #00f;
+            padding: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h3>classList로 class 속성 바꾸기</h2>
+
+    <button onclick="addClass()">add</button>
+    <button onclick="removeClass()">remove</button>
+    <button onclick="toggleClass()">toggle</button>
+
+    <div id="myDIV">
+        <p>안녕하세요</p>
+    </div>
+
+    <script>
+        function addClass() {
+            const list = document.getElementById("myDIV").classList;
+            list.add("active"); 
+        }
+
+        function removeClass(){
+            document.getElementById("myDIV").classList.remove("active");
+        }
+
+        function toggleClass(){
+            const list = document.getElementById("myDIV");
+            list.classList.toggle("active");
+        }
+    </script>
+
+</body>
+</html>

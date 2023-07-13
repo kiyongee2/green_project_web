@@ -1,0 +1,93 @@
+/* 공통 스타일 */
+:root{
+    --text-color: rgb(237, 237, 237);
+}
+
+body{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    /* color: white; */
+    color: var(--text-color);
+    padding: 8px 12px;
+}
+
+/* PC 기준 */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(1, 1, 104);
+}
+.navbar_logo{
+    font-size: 24px;
+    /* color: white; */
+    color: var(--text-color);
+    padding-left: 10px;
+}
+.navbar_logo a{
+    padding-left: 5px;
+}
+.navbar_logo i{
+    color: greenyellow;
+}
+.navbar_menu{
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+.navbar_menu li{
+    padding: 8px 12px;
+}
+.navbar_menu li:hover{
+    background-color: lightgreen;
+    border-radius: 4px;
+}
+.navbar_icons{
+    /* color: white; */
+    color: var(--text-color);
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+.navbar_icons li{
+    padding: 8px 12px;
+}
+.navbar_toggleBtn{
+    position: absolute;
+    right: 30px;
+    font-size: 24px;
+    padding-top: 0;
+    display: none;
+}
+
+/* 모바일 기준 */
+@media screen and (max-width: 768px){
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 24px;
+    }
+    .navbar_menu{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        display: none;
+    }
+    .navbar_menu li{
+        width: 100%;
+        text-align: center;
+    }
+    .navbar_icons{
+        justify-content: center;
+        width: 100%;
+        display: none;
+    }
+    .navbar_toggleBtn{
+        display: block;
+    }
+    .navbar_menu.active, .navbar_icons.active{
+        display: flex;
+    }
+}
